@@ -32,7 +32,7 @@ namespace MiniProject.Repository
                 
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", SubscriptionHelper.SessionToken);
 
-                client.BaseAddress = new Uri("https://localhost:5009/api/");//Target Web Api
+                client.BaseAddress = new Uri("http://52.230.228.30/api/");//Target Web Api
 
                  var responseTask = client.GetAsync("DrugsApi/SearchDrugsById/" + subscription.DrugId);
                  responseTask.Wait();
@@ -59,7 +59,7 @@ namespace MiniProject.Repository
             {
 
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", SubscriptionHelper.SessionToken);
-                client.BaseAddress = new Uri("https://localhost:5008/api/");
+                client.BaseAddress = new Uri("http://52.238.255.194/api/");
 
 
                 client.DefaultRequestHeaders.Accept.Clear();
@@ -99,7 +99,7 @@ namespace MiniProject.Repository
                 var subscription = SubscriptionHelper.SubscriptionDetails.SingleOrDefault(s => s.DrugId == drugId);
                 if (subscription == null) return null;
              
-                client.BaseAddress = new Uri("https://localhost:5008/api/");
+                client.BaseAddress = new Uri("http://52.238.255.194/api/");
                 
                 var responseTask = client.GetAsync("Refill/GetRefillStatus/" + subscription.SubscriptionId);
                 responseTask.Wait();
