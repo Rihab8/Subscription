@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: miniproject
-        image: myfirstazurecr.azurecr.io/orderitemapiimage:Latest
+        image: mailordercr.azurecr.io/subscriptionimage:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
