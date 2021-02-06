@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{35CBBE38-B0E2-4506-BC2A-6CC15FA31144}|Default">
+  <MonoDevelop.Ide.ItemProperties.MiniProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MiniProject/Models/Subscription.cs">
+    <Files>
+      <File FileName="MiniProject/Controllers/SubscribeController.cs" Line="78" Column="14" />
+      <File FileName="MiniProject/Repository/ISubscriptionRepository.cs" Line="19" Column="1" />
+      <File FileName="MiniProject/Repository/SubscriptionRepository.cs" Line="88" Column="33" />
+      <File FileName="MiniProject/Models/Subscription.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MiniProject" expanded="True">
+            <Node name="MiniProject" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Subscription.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+            <Node name="Tests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
