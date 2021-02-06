@@ -10,7 +10,7 @@ using MiniProject.Service;
 
 namespace MiniProject.Controllers
 {
-    ///[Authorize]
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class SubscribeController : ControllerBase
