@@ -59,7 +59,7 @@ namespace MiniProject.Repository
             {
 
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", SubscriptionHelper.SessionToken);
-                client.BaseAddress = new Uri("http://40.88.203.91/api/");
+                client.BaseAddress = new Uri("https://refillmsvc.azurewebsites.net/api/");
 
 
                 client.DefaultRequestHeaders.Accept.Clear();
@@ -99,7 +99,7 @@ namespace MiniProject.Repository
                 var subscription = SubscriptionHelper.SubscriptionDetails.SingleOrDefault(s => s.DrugId == drugId);
                 if (subscription == null) return null;
              
-                client.BaseAddress = new Uri("http://40.88.203.91/api/");
+                client.BaseAddress = new Uri("https://refillmsvc.azurewebsites.net/api/");
                 
                 var responseTask = client.GetAsync("Refill/GetRefillStatus/" + subscription.SubscriptionId);
                 responseTask.Wait();
