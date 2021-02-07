@@ -59,7 +59,7 @@ namespace MiniProject.Repository
             {
 
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", SubscriptionHelper.SessionToken);
-                client.BaseAddress = new Uri("https://refillmsvc.azurewebsites.net/api/");
+                client.BaseAddress = new Uri("http://20.40.245.9/api/");
 
 
                 client.DefaultRequestHeaders.Accept.Clear();
