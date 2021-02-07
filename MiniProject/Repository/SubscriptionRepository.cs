@@ -99,7 +99,7 @@ namespace MiniProject.Repository
                 var subscription = SubscriptionHelper.SubscriptionDetails.SingleOrDefault(s => s.DrugId == drugId);
                 if (subscription == null) return null;
              
-                client.BaseAddress = new Uri("http://52.238.255.194/api/");
+                client.BaseAddress = new Uri("http://40.88.203.91/api/");
                 
                 var responseTask = client.GetAsync("Refill/GetRefillStatus/" + subscription.SubscriptionId);
                 responseTask.Wait();
