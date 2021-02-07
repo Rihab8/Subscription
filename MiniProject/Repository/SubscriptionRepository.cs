@@ -59,7 +59,7 @@ namespace MiniProject.Repository
             {
 
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", SubscriptionHelper.SessionToken);
-                client.BaseAddress = new Uri("http://52.238.255.194/api/");
+                client.BaseAddress = new Uri("http://40.88.203.91/api/");
 
 
                 client.DefaultRequestHeaders.Accept.Clear();
